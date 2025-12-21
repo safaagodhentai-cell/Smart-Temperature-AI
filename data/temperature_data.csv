@@ -1,0 +1,7 @@
+Temperature,Status
+22,Normal
+25,Normal
+30,Normal
+35,Warning
+40,Danger
+45,Danger
