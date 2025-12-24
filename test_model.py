@@ -11,9 +11,11 @@ y = data["Status"]
 model = DecisionTreeClassifier()
 model.fit(X, y)
 
-# Test input
-test_temperature = [[37]]
+# Ask user for temperature
+temp = float(input("Enter temperature: "))
+test_temperature = [[temp]]
+
 prediction = model.predict(test_temperature)
 
-print("Temperature:", test_temperature[0][0])
+print("Temperature:", temp)
 print("Status:", prediction[0])
